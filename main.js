@@ -61,11 +61,36 @@ let lastNumber = 0;
 
 const lastElement = (array) => {
 lastNumber = array[array.length-1];
-
-
 return lastNumber
 
 };
 console.log(lastElement(numbers));
 console.log(lastElement(cities));
 // ______________________________________________________________
+
+// 4. Zwróć największy element [];
+let bigest = 0;
+const whichIsTheBigestNumber = function(){
+    console.log (numbers);
+    for (i = 0; i < numbers.length; i++){
+        if (numbers[i] > bigest){
+            bigest = numbers[i];
+        }
+    }
+}
+
+whichIsTheBigestNumber(numbers);
+console.log(bigest)
+
+// -------------------------
+var arr = [3, 6, 2, 56, 32, 5, 89, 32];
+var largest = arr[0];
+
+for (var i = 0; i < arr.length; i++) {
+    if (largest < arr[i] ) {
+        largest = arr[i];
+    }
+}
+console.log(largest);
+// ___________________________________________________________
+
