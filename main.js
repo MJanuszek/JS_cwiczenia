@@ -94,3 +94,60 @@ for (var i = 0; i < arr.length; i++) {
 console.log(largest);
 // ___________________________________________________________
 
+// 5. Odwróć elementy [];
+
+const colors = ["midori", "akai", "kuroi", "shiroi"];
+const reversed = [];
+
+const reverseArray = (array) => {
+    for (i=array.length-1; i>=0; i--){
+        reversed.push(array[i]);
+    }
+}
+
+reverseArray(colors);
+console.log(colors);
+console.log(reversed);
+
+// 6. Zwróć co drugi element [];
+
+const evenEveryOthers  = [];
+
+const everyOther = function (array) {
+    for (i=0; i< array.length; i++) {
+        if (i % 2 === 1 ) {
+            evenEveryOthers.push(array[i])
+        }
+    }
+}
+
+everyOther(colors);
+console.log(evenEveryOthers);
+// __________________________________________________________________________
+
+// 7. Zwróć pierwszą połowę [];
+
+const authors = ["Murakami", "Sapkowski", "Jadowska", "Hamliton", "Maas", "Mickiweicz", "Bułhakow"];
+
+const halfOfArray = [];
+const halfOfArray2 = [];
+
+const firstHalf = function (array) {
+    for (i=0; i<array.length/2; i++) {
+        halfOfArray.push(array[i]);
+    }
+}
+
+const secondHalf = (array) => {
+
+    for (i=array.length-1; i>array.length/2; i--){
+        halfOfArray2.push(array[i]);
+    }
+
+}
+
+firstHalf(authors);
+console.log(halfOfArray);
+secondHalf(authors);
+console.log(halfOfArray2);
+// __________________________________________________________________
